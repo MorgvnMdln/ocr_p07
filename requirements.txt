@@ -84,6 +84,7 @@ pyzmq==23.2.0
 reindent==3.5.1
 requests==2.27.1
 rich==12.5.1
+scipy==1.7.0
 selenium==4.2.0
 semver==2.13.0
 Send2Trash==1.8.0
