@@ -8,14 +8,6 @@ from prediction_model import PredictionModel
 pred_model = PredictionModel()
 app = Flask(__name__)
 
-@app.route('/')
-'''def index():
-    return render_template('index_form.py')'''
-
-# @app.route('/dashboard/')
-# def dashboard():
-    # return render_template("dashboard.html")
-
 @app.route("/api/predict", methods=["GET"])
 
 def predict():
