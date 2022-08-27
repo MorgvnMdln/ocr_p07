@@ -10,8 +10,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    # return render_template('index_form.py')
-     return render_template('https://github.com/MorgvnMdln/ocr_p07/blob/main/templates/index_form.py')
+    return render_template('index_form.py')
 
 # @app.route('/dashboard/')
 # def dashboard():
