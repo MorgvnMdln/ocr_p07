@@ -77,7 +77,7 @@ with st.form("Credit Scoring Form", clear_on_submit=True):
     # If submit button is pressed
     if submit:
         #app.py
-        URL = "https://credit-scoring-app-mdln.herokuapp.com:5000/api/predict"
+        URL = "https://credit-scoring-app-mdln.herokuapp.com/api/predict"
         # URL = "http://127.0.0.1:5000/api/predict"
 
         # defining a params dict for the parameters to be sent to the API
