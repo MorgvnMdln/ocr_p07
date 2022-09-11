@@ -8,6 +8,7 @@ import json
 import argparse
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
+import csv
 
 
 def get_days(date_value):
@@ -100,6 +101,16 @@ with st.form("Credit Scoring Form", clear_on_submit=True):
         response = r.json()
         label = response['data']
 
+        # Converting dictionnary data to csv format
+        path = "/dashboard_data.csv"
+        if os.path.exists(path):
+            with open('dashboard_data.csv', 'w', encoding='UTF8', newline='') as f:
+                writer.writerows(r)
+        else:
+            with open('dashboard_data.csv', 'w', encoding='UTF8') as output:
+                writer = csv.writer(output)
+                for key, value in r.items():
+                    writer.writerow([key, value])
 
 
         #PieChart
